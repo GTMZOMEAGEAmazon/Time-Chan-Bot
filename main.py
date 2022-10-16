@@ -9,4 +9,4 @@ async def on_ready():
 @bot.command()
 async def ping(ctx):
     await ctx.send("Pong")
-bot.run("MTAxMzcyMDkyMjMxMTYzNDk0NA.Ge8CWl.qdwuICH-DRp79NHEDLUKbL6IQ6GLMKR7qAl2jU")
+bot.run("your_token")
