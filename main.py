@@ -1,6 +1,11 @@
 import discord
 from discord.ext.commands import *
+import os
+import json
 bot = Bot(command_prefix="!", intents = discord.Intents.all())
+with open('hi/config.json', 'r') as f:
+    config = json.load(f)
+token = config['token']
 
 @bot.event
 async def on_ready():
@@ -8,4 +13,4 @@ async def on_ready():
 @bot.command()
 async def ping(ctx):
     await ctx.send("Pong")
-bot.run("MTAxMzcyMDkyMjMxMTYzNDk0NA.GuNNxw.ZPdvAG7SumrMS4t-SsxPbSqXrpUh9nOy2Zfsj4")
+bot.run("MTAxMzcyMDkyMjMxMTYzNDk0NA.Ge8CWl.qdwuICH-DRp79NHEDLUKbL6IQ6GLMKR7qAl2jU")
