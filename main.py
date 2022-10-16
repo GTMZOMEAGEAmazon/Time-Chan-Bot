@@ -1,11 +1,7 @@
 import discord
 from discord.ext.commands import *
-import os
-import json
 bot = Bot(command_prefix="!", intents = discord.Intents.all())
-with open('hi/config.json', 'r') as f:
-    config = json.load(f)
-token = config['token']
+
 
 @bot.event
 async def on_ready():
